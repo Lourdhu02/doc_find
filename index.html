@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc.Find</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div id="logo">Doc.Find</div>
+      <div>
+        <a href="index.html" class="nav-link" style="color: blue">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="service.html" class="nav-link">Service</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button class="toggle-button" id="modeToggle">&#9728;</button>
+    </nav>
+    <div class="main_body">
+      <div class="search_box">
+        <div class="search-container">
+          <div
+            class="sh1"
+            style="
+              font-size: 46px;
+              text-align: left;
+              padding: 15px;
+              letter-spacing: 0px;
+            "
+          >
+            Find Your Doctor
+          </div>
+          <div
+            class="sh2"
+            style="
+              font-size: 16px;
+              text-align: left;
+              padding: 15px;
+              color: lightgray;
+            "
+          >
+            Our purpose is to aid you in locating the doctor of your choice,
+            assisting you with their contact information and appointment
+            scheduling.
+          </div>
+          <form action="search.php" method="post">
+            <div class="search-category">
+              <label for="specialization">Specialization </label>
+              <select
+                name="specialization"
+                id="specialization"
+                class="search-input"
+                required
+              >
+                <option value="Cardiology">Cardiology</option>
+                <option value="Dermatology">Dermatology</option>
+                <option value="Orthopedics">Orthopedics</option>
+                <option value="Pediatrics">Pediatrics</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Oncology">Oncology</option>
+                <option value="Gastroenterology">Gastroenterology</option>
+              </select>
+            </div>
+            <div class="search-category">
+              <label for="area">Area </label>
+              <select name="area" id="area" class="search-input" required>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+              </select>
+            </div>
+            <button class="search-button" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+      <div class="doc_img">
+        <img src="Medicine-bro.png" width="60%" alt="" />
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
